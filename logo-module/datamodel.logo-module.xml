@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+  <files>
+    <!-- Add a new file, here it is a picture -->
+    <file id="itop-custom_logo" _delta="define">
+      <name>custom_logo.png</name>
+      <mimeType>image/png</mimeType>
+      <data>[Insert your base 64 image]</data>
+      </file>
+    </files>
+    <!-- We modify the logo core file with the id of our new picture -->
+    <branding _delta="define">
+      <main_logo>
+        <fileref ref="itop-custom_logo" />
+      </main_logo>
+      <login_logo>
+        <fileref ref="itop-custom_logo" />
+      </login_logo>
+      <portal_logo>
+        <fileref ref="itop-custom_logo" />
+      </portal_logo>
+    </branding>
+  </itop_design>
